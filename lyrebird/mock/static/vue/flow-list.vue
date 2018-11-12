@@ -9,6 +9,7 @@
             </th>
             <th>Src</th>
             <th>Status</th>
+            <th>Time</th>
             <th>Host</th>
             <th>Path</th>
           </tr>

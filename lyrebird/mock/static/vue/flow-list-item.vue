@@ -12,6 +12,9 @@
             </strong>
         </td>
         <td>
+            {{time}}
+        </td>
+        <td>
             {{flowContent.hostname}}
         </td>
         <td>
@@ -72,6 +75,16 @@
                 } else {
                     return 'label-danger'
                 }
+            },
+            time: function() {
+                 let date = new Date();
+                 let h = date.getHours();
+                 h = h < 10 ? ('0' + h) : h;
+                 let m = date.getMinutes();
+                 m = m < 10 ? ('0' + m) : m;
+                 let s = date.getSeconds();
+                 s = s < 10 ? ('0' + s) : s;
+                return h + ':' + m + ':' + s;
             }
         },
         methods: {}
